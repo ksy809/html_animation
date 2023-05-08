@@ -1,0 +1,41 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 100px;
+  border: 3px solid darkgreen;
+  border-radius: 30%;
+  background-color: gray;
+  transition: all 0.3s ease-in-out;
+}
+
+div:hover {
+  background-color: darkkhaki;
+  transform: rotateY(150deg) scaleX(3) translateZ(65px);
+}
+
+h1 {
+  color: darkgreen;
+  transition: color 0.5s ease-in-out;
+}
+
+h1:hover {
+  color: aqua;
+}
+
+img {
+  animation: spin 3s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
